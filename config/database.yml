@@ -8,6 +8,7 @@ default: &default
 development:
   <<: *default
   database: onebit_exchange_development
+  
 test:
   <<: *default
   database: onebit_exchange_test
