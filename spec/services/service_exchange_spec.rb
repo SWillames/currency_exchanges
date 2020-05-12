@@ -23,7 +23,7 @@ describe 'Exchange' do
   
   it 'call' do
       amount = rand(0..9999)
-      service_exchange = ExchangeService.new('USD', 'BRL').call
+      service_exchange = ExchangeService.new('USD', 'BRL',amount).call
       expect_exchange = amount * exchange_value
       expect(service_exchange).to eq(expect_exchange)
   end
