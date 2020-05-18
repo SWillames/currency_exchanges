@@ -34,5 +34,8 @@ $(document).ready(function () {
     api_call();
   });
 
+  $("#amount").on('input', api_call)
+  $("#source_currency").on('change', api_call)
+  $("#target_currency").on('change', api_call)
 
 });
