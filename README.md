@@ -1,24 +1,43 @@
-# README
+# Currency Exchanges
+Currency Exchanges é uma aplicação para gerenciar e converter moedas.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Descrição
+Este projeto é uma aplicação em Ruby on Rails que permite a conversão entre diferentes moedas, fornecendo taxas de câmbio atualizadas.
 
-Things you may want to cover:
+## Instalação
 
-* Ruby version
+### Usando Docker
 
-* System dependencies
+Contruindo a imagem do projeto com o comando build: 
+```
+docker-compose build
+```
 
-* Configuration
+### Sem docker
 
-* Database creation
+#### Pré-requisitos
 
-* Database initialization
+- Ruby 2.6.5 
+- Rails 6.0.2
+- SQLite3 
 
-* How to run the test suite
+para instalar as dependências: 
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bundle install
+```
 
-* Deployment instructions
+## Utilização
+Para rodar a aplicação com docker: 
+```
+docker-compose up
+```
 
-* ...
+Sem docker
+```
+rails s
+```
+## Rodando teste
+```
+docker-compose run --rm app bundle exec rspec
+```
